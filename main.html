@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anas.Z</title>
+  <link rel="website icon" href="home-removebg-preview.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,400&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- tsParticles -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js" defer></script>
+
+  <!-- Spline Viewer -->
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.12/build/spline-viewer.js" defer></script>
+</head>
+<body>
+  <!-- 3D Model Background -->
+  <spline-viewer
+    class="background"
+    url="https://prod.spline.design/IKFtcz8torROL7GV/scene.splinecode"
+    interaction-prompt="none"
+    loading-anim="none">
+  </spline-viewer>
+
+  <!-- Particles -->
+  <div id="tsparticles"></div>
+
+  <!-- Welcome Text -->
+  <h1 class="wellcome">Welcome</h1>
+
+  <!-- Intro Text -->
+  <div class="textCont">
+    <p>
+      <strong>
+        Welcome to my personal website!<br />
+        But first, who am I?<br />
+        My name is Anas, I am a 15-year-old Tunisian with a <strong>DREAM</strong>.<br />
+        I have always dreamed about becoming a professional programmer.<br />
+        Two years ago, this dream began to grow. Since then, I’ve been working hard and doing my best to become the best version of myself.<br />
+        You might ask, “Have you achieved that yet?”<br />
+        Well, I’ll let you judge by seeing my work.<br />
+        Enjoy!
+      </strong>
+    </p>
+  </div>
+
+  <!-- Navigation -->
+  <a href="main.html">
+    <button class="main"><strong>Main</strong></button>
+  </a>
+  <a href="services/services.html">
+    <button class="services"><strong>Services</strong></button>
+  </a>
+  <a href="../contact/contact.html">
+      <button class="contact"><strong>Contact</strong></button>
+  </a>
+
+
+  <!-- Particles Config -->
+  <script>
+    window.onload = () => {
+      tsParticles.load("tsparticles", {
+        background: { color: { value: "transparent" } },
+        fpsLimit: 60,
+        particles: {
+          color: { value: "#1e3a8a" },
+          move: { direction: "none", enable: true, outModes: "bounce", speed: 1 },
+          number: { value: 45, density: { enable: true, area: 800 } },
+          opacity: { value: 0.4 },
+          shape: { type: "circle" },
+          size: { value: { min: 1, max: 3 } }
+        },
+        detectRetina: true
+      });
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,400&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- tsParticles -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js" defer></script>
+
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.12/build/spline-viewer.js"></script>
+
+  <link rel="website icon" href="hh-removebg-preview.png">
+
+
+</head>
+<body>
+  <a href="https://anas01-dev.github.io/zouzou-webpage/index.html">
+      <img src="images/Screenshot_20250620_131322.png" class="img1">
+  </a>
+
+  <spline-viewer class="bubble"   url="https://prod.spline.design/XyHnYJIGH2Vjyhxh/scene.splinecode"></spline-viewer>
+
+
+    <!-- Navigation -->
+    <a href="../main.html">
+        <button class="main"><strong>Main</strong></button>
+    </a>
+    <a href="services/services.html">
+        <button class="services"><strong>Services</strong></button>
+    </a>
+    <a href="../contact/contact.html">
+      <button class="contact"><strong>Contact</strong></button>
+    </a>
+    
+    <!-- Page Title -->
+    <h2 class="title">
+        <strong>Our services</strong>
+    </h2>
+ 
+    <h2 class="first">
+      My first ever website:
+    </h2>
+
+    <a href="https://anas01-dev.github.io/zouzou-webpage/index.html">
+      <img src="images/Screenshot_20250620_131322.png" class="img1">
+    </a>
+
+    <h3 class="what"> what am i offering?</h3>
+    <div class="whatCont">
+      <p class="whatTxt">
+       <strong>
+        My goal is to bring your vision to life through a fully interactive, customized website that helps grow your business and builds your online presence. Every site I create is:
+
+        Tailored to Your Needs
+        Built specifically for your goals, brand, and audience — not just a generic template.
+
+        User-Friendly & Easy to Navigate
+        Designed with your visitors in mind, ensuring a smooth and intuitive browsing experience.
+
+        Visually Appealing & Professional
+        Clean, modern design that reflects your business’s identity and builds trust with customers.
+
+        And last but not least, mobile-Responsive
+        Looks and works beautifully on all devices — from desktops to smartphones.
+       </strong>
+    </p>
+    </div>
+
+    <h2 class="library">
+      <strong>my work library:</strong>
+    </h2>
+    
+    <div class="descCont">
+      <p class="desc">
+      This website was created for me to learn html, css and javaScript basics, but ended up as a store project for a friend of mine. I did not have a lot of time to work on it, but it was a great learning experience. (You can check it out by clicking on the image.)
+    </p>
+
+    </div>
+
+
+    <!-- Particles -->
+    <div id="tsparticles"></div>
+
+    <!-- Particles Config -->
+    <script>
+      window.onload = () => {
+        tsParticles.load("tsparticles", {
+          background: { color: { value: "transparent" } },
+          fpsLimit: 60,
+          particles: {
+            color: { value: "#1e3a8a" },
+            move: { direction: "none", enable: true, outModes: "bounce", speed: 1 },
+            number: { value: 45, density: { enable: true, area: 800 } },
+            opacity: { value: 0.4 },
+            shape: { type: "circle" },
+            size: { value: { min: 1, max: 3 } }
+          },
+          detectRetina: true
+        });
+      };
+    </script>
+</body>
+</html>
