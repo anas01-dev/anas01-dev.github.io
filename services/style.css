@@ -5,7 +5,7 @@
 }
 
 html, body {
-  height: 110%;
+  height: 100%;
   font-family: 'Merriweather', serif;
   background: radial-gradient(ellipse at bottom, #0d1b2a 0%, #000000 100%);
   overflow: hidden;
@@ -65,22 +65,37 @@ html, body {
   transform: translateX(-50%) scale(1.05);
 }
 
-.what {
-  position: absolute;
+/* SCROLL WRAPPER */
+.scrollWrap {
+  position: relative;
   top: 200px;
-  left: 300px;
-  transform: translateX(-50%);
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 20px;
+  margin: 0 auto;
+  width: 90%;
+  z-index: 10;
+}
+.scrollWrap::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollWrap::-webkit-scrollbar-thumb {
+  background: #5c67f6;
+  border-radius: 3px;
+}
+
+.what, .library, .first, .img1, .descCont {
+  position: relative;
+}
+
+.what {
   font-size: 28px;
   color: #e0e7ff;
   text-shadow: 0 0 10px #8b5cf6, 0 0 20px #7c3aed;
-  z-index: 10;
+  margin-bottom: 10px;
 }
 
 .whatCont {
-  position: absolute;
-  top: 270px;
-  left: 500px;
-  transform: translateX(-50%);
   max-width: 650px;
   background: rgba(17, 24, 39, 0.6);
   padding: 30px 40px;
@@ -89,62 +104,42 @@ html, body {
   font-size: 1.1rem;
   line-height: 1.7;
   color: #f3f4f6;
-  z-index: 10;
   backdrop-filter: blur(8px);
+  margin-bottom: 20px;
 }
 .whatCont strong { color: #a78bfa; }
 
 .library {
-  position: absolute;
-  top: 680px;
-  left: 300px;
-  transform: translateX(-50%);
   font-size: 28px;
   color: #e0e7ff;
   text-shadow: 0 0 10px #8b5cf6, 0 0 20px #7c3aed;
-  z-index: 10;
+  margin-top: 30px;
 }
 
 .first {
-  position: absolute;
-  top: 780px;
-  left: 320px;
-  transform: translateX(-50%);
   font-size: 25px;
   color: #e0e7ff;
   text-shadow: 0 0 20px #7f5ccf, 0 0 40px #543d7c;
-  z-index: 10;
+  margin-top: 20px;
 }
 
 .img1 {
-  position: absolute;
-  top: 850px;
-  left: 200px;
   width: 250px;
   border-radius: 5px;
   box-shadow: 0 0 20px #7f5ccf, 0 0 40px #543d7c;
   transition: transform 0.25s;
+  margin-top: 10px;
 }
 .img1:hover {
   transform: scale(1.1);
 }
 
 .descCont {
-  width: 500px;
-  position: absolute;
-  top: 855px;
-  left: 470px;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 10px;
 }
 .desc {
   text-shadow: 0 0 20px #7f5ccf, 0 0 40px #543d7c;
   font-size: 20px;
-}
-
-@media(max-width: 678px) {
-  /* Your media query content here... */
-}
-
-/* ✅ SCROLL FIX */
-html, body {
-  overflow-y: auto !important;
 }
