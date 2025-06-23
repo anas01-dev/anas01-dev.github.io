@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -13,18 +14,18 @@ html, body {
   color: #e0e7ff;
 }
 
-.bubble {
+.bubble{
   position: fixed;
-  left: 400px;
+  left:400px;
   width: 100vw;
   height: 100vh;
   z-index: 1;
   pointer-events: none;
   filter: drop-shadow(0 0 20px rgba(128, 90, 213, 0.4));
-  transition: rotate 0.25s;
+  transition: rotate 0.25s
 }
 
-.main, .services, .contact {
+.main, .services ,.contact{
   position: fixed;
   top: 90px;
   padding: 10px 24px;
@@ -40,11 +41,23 @@ html, body {
   z-index: 15;
   backdrop-filter: blur(6px);
 }
-.main { left: 1300px; width: 120px; }
-.services { left: 1450px; }
-.contact { left: 1610px; }
-
-.main:hover, .services:hover, .contact:hover {
+.main {
+  left: 1300px;
+  width: 120px;
+}
+.services {
+  left: 1450px;
+}
+.contact{
+  left: 1610px;
+}
+.main:hover,
+.services:hover {
+  background-color: rgba(96, 165, 250, 0.1);
+  color: #ffffff;
+  transform: translateY(-3px) scale(1.05);
+}
+.contact:hover{
   background-color: rgba(96, 165, 250, 0.1);
   color: #ffffff;
   transform: translateY(-3px) scale(1.05);
@@ -76,7 +89,8 @@ html, body {
   z-index: 10;
 }
 
-position: fixed;
+.whatCont {
+  position: fixed;
   top: 270px;
   left: 500px;
   transform: translateX(-50%);
@@ -90,9 +104,12 @@ position: fixed;
   color: #f3f4f6;
   z-index: 10;
   backdrop-filter: blur(8px);
-.whatCont strong { color: #a78bfa; }
+}
+.whatCont strong {
+  color: #a78bfa;
+}
 
-.library {
+.library{
   position: absolute;
   top: 680px;
   left: 300px;
@@ -102,8 +119,7 @@ position: fixed;
   text-shadow: 0 0 10px #8b5cf6, 0 0 20px #7c3aed;
   z-index: 10;
 }
-
-.first {
+.first{
   position: absolute;
   top: 780px;
   left: 320px;
@@ -113,8 +129,7 @@ position: fixed;
   text-shadow: 0 0 20px #7f5ccf, 0 0 40px #543d7c;
   z-index: 10;
 }
-
-.img1 {
+.img1{
   position: absolute;
   top: 850px;
   left: 200px;
@@ -123,17 +138,16 @@ position: fixed;
   box-shadow: 0 0 20px #7f5ccf, 0 0 40px #543d7c;
   transition: transform 0.25s;
 }
-.img1:hover {
-  transform: scale(1.1);
+.img1:hover{
+  transform: scale(1.1)
 }
-
-.descCont {
+.descCont{
   width: 500px;
   position: absolute;
   top: 855px;
   left: 470px;
 }
-.desc {
+.desc{
   text-shadow: 0 0 20px #7f5ccf, 0 0 40px #543d7c;
   font-size: 20px;
 }
@@ -287,9 +301,4 @@ position: fixed;
   text-shadow: 0 0 20px #7f5ccf, 0 0 40px #543d7c;
   font-size: 10px;
 }
-}
-
-/* ✅ SCROLL FIX */
-html, body {
-  overflow-y: auto !important;
 }
