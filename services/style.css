@@ -5,7 +5,7 @@
 }
 
 html, body {
-  height: 110%;
+  height: 200%;
   font-family: 'Merriweather', serif;
   background: radial-gradient(ellipse at bottom, #0d1b2a 0%, #000000 100%);
   overflow: hidden;
