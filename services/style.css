@@ -5,7 +5,7 @@
 }
 
 html, body {
-  height: 200%;
+  height: 110%;
   font-family: 'Merriweather', serif;
   background: radial-gradient(ellipse at bottom, #0d1b2a 0%, #000000 100%);
   overflow: hidden;
@@ -77,7 +77,7 @@ html, body {
 }
 
 .whatCont {
-  position: fixed;
+  position: absolute;
   top: 270px;
   left: 500px;
   transform: translateX(-50%);
