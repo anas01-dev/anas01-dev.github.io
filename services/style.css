@@ -5,11 +5,10 @@
 }
 
 html, body {
-  height: 120%;
-  min-height: 100%;
+  height: 100%;
   font-family: 'Merriweather', serif;
   background: radial-gradient(ellipse at bottom, #0d1b2a 0%, #000000 100%);
-  overflow-y: auto;
+  overflow: hidden;
   position: relative;
   color: #e0e7ff;
 }
@@ -80,9 +79,10 @@ html, body {
 .whatCont {
   position: relative;
   top: 270px;
-  left: 500px;
+  left: 50%;
   transform: translateX(-50%);
-  max-width: 650px;
+  width: 100vw;
+  max-width: none;
   background: rgba(17, 24, 39, 0.6);
   padding: 30px 40px;
   border-radius: 12px;
@@ -141,9 +141,11 @@ html, body {
   font-size: 20px;
 }
 
-/* Add extra space so page is scrollable about 300px */
-body::after {
-  content: "";
-  display: block;
-  height: 300px;
+@media(max-width: 678px) {
+  /* Your media query content here... */
+}
+
+/* ✅ SCROLL FIX */
+html, body {
+  overflow-y: auto !important;
 }
