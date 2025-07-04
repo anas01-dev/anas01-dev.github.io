@@ -1,0 +1,244 @@
+body {
+  background: linear-gradient(-45deg, #000000, #1a0000, #000000, #1a0000);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  font-family: "Boldonse", system-ui;
+  max-width: 1500px;
+  height: 1000px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+.logo {
+  color: white;
+  font-size: 40px;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 100;
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  transition: font-size 0.5s ease-in-out;
+  text-shadow: 0 0 15px rgb(160, 35, 35);
+}
+.logo:hover {
+  font-size: 45px;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { text-shadow: 0 0 12px rgb(160, 35, 35); }
+  50% { text-shadow: 0 0 20px rgb(255, 60, 60); }
+  100% { text-shadow: 0 0 12px rgb(160, 35, 35); }
+}
+
+.main, .skills, .work {
+  color: rgb(207, 0, 0);
+  font-size: 20px;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 100;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+.main:hover, .skills:hover, .work:hover {
+  font-size: 25px;
+  cursor: pointer;
+  border-bottom: 2px solid rgb(207, 0, 0);
+  text-shadow: 0 0 10px rgb(207, 0, 0);
+}
+
+.main:active, .skills:active, .work:active {
+  transform: scale(0.98);
+  color: white;
+}
+
+.main { top: 35px; left: 800px; }
+.skills { top: 35px; left: 1000px; }
+.work { top: 35px; left: 1155px; }
+
+.picture {
+  position: absolute;
+  border-radius: 500px;
+  left: 100px;
+  top: 150px;
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.15);
+}
+
+.hey {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  top: 200px;
+  left: 900px;
+  font-size: 35px;
+  letter-spacing: 3px;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.tt {
+  color: rgb(255, 255, 255);
+  position: relative;
+  left: 850px;
+  top: 400px;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.cont1 {
+  width: 1000px;
+}
+
+.anas {
+  color: rgb(250, 79, 79);
+  text-shadow: 0 0 15px rgb(167, 5, 5);
+}
+
+.typing {
+  font-size: 35px;
+  font-weight: 600;
+  min-width: 280px;
+  color: white;
+  position: absolute;
+  left: 900px;
+  top: 280px;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.425);
+}
+
+.typing span {
+  position: relative;
+  color: rgb(250, 79, 79);
+  text-shadow: 0 0 15px rgb(167, 5, 5);
+}
+
+.typing span::before {
+  content: "frontend developer";
+  animation: words 10s steps(1) infinite;
+}
+
+.typing span::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: rgb(250, 79, 79);
+  right: -10px;
+  animation: blink 0.6s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes words {
+  0%, 20%   { content: "frontend developer"; }
+  21%, 40%  { content: "Web-designer"; }
+  41%, 60%  { content: "web-developer"; }
+  61%, 80%  { content: "Script Writer"; }
+  81%, 100% { content: "TikToker"; }
+}
+
+.tiktok {
+  position: absolute;
+  top: 750px;
+  left: 870px;
+  width: 70px;
+  filter: drop-shadow(0 0 15px white);
+  border-radius: 50%;
+  transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out;
+}
+.tiktok:hover {
+  transform: scale(1.1) translateY(-10px);
+  background-color: rgba(207, 11, 11, 0.568);
+  filter: drop-shadow(0 0 20px white);
+  cursor: pointer;
+}
+
+.fiverr {
+  position: absolute;
+  top: 765px;
+  left: 970px;
+  width: 70px;
+  filter: drop-shadow(0 0 15px white);
+  border-radius: 50%;
+  transition: transform 0.6s ease-in-out;
+}
+.fiverr:hover {
+  transform: scale(1.2) translateY(-10px);
+  cursor: pointer;
+  filter: drop-shadow(0 0 20px white);
+}
+
+/* Responsive */
+@media(max-width: 995px) {
+  .logo {
+    font-size: 30px;
+    top: 20px;
+    left: 20px;
+  }
+  .logo:hover {
+    font-size: 35px;
+  }
+
+  .main, .skills, .work {
+    font-size: 20px;
+  }
+  .main:hover, .skills:hover, .work:hover {
+    font-size: 25px;
+    border-bottom: 2px solid rgb(207, 0, 0);
+    text-shadow: 0 0 10px rgb(207, 0, 0);
+  }
+
+  .main { top: 100px; left: 10px; }
+  .skills { top: 100px; left: 150px; }
+  .work { top: 100px; left: 240px; }
+
+  .picture {
+    left: 10px;
+    top: 150px;
+    width: 200px;
+  }
+
+  .hey {
+    top: 350px;
+    left: 50px;
+    font-size: 15px;
+    color: white;
+  }
+
+  .tt {
+    left: 30px;
+    top: 450px;
+    font-size: 10px;
+    color: white;
+  }
+
+  .cont1 {
+    width: 300px;
+  }
+
+  .typing {
+    left: 50px;
+    top: 380px;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .tiktok {
+    top: 880px;
+    left: 30px;
+  }
+
+  .fiverr {
+    top: 900px;
+    left: 150px;
+  }
+}

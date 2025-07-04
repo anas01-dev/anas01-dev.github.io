@@ -1,0 +1,248 @@
+body {
+  background: linear-gradient(-45deg, #000000, #1a0000, #000000, #1a0000);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  font-family: "Boldonse", system-ui;
+  max-width: 1500px;
+  height: 1500px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.logo {
+  color: white;
+  font-size: 40px;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 100;
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  transition: font-size 0.5s ease-in-out;
+  text-shadow: 0 0px 12px rgb(160, 35, 35);
+}
+.logo:hover {
+  font-size: 45px;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { text-shadow: 0 0 12px rgb(160, 35, 35); }
+  50% { text-shadow: 0 0 20px rgb(255, 60, 60); }
+  100% { text-shadow: 0 0 12px rgb(160, 35, 35); }
+}
+
+.main, .skills, .work {
+  color: rgb(207, 0, 0);
+  font-size: 20px;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 100;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+.main:hover, .skills:hover, .work:hover {
+  font-size: 25px;
+  cursor: pointer;
+  border-bottom: 2px solid rgb(207, 0, 0);
+  text-shadow: 0 0 10px rgb(207, 0, 0);
+}
+.main:active, .skills:active, .work:active {
+  transform: scale(0.98);
+  color: white;
+}
+
+.main { top: 35px; left: 800px; }
+.skills { top: 35px; left: 1000px; }
+.work { top: 35px; left: 1155px; }
+
+.techs {
+  position:relative;
+  color: white;
+  top: 250px;
+  left: 10px;
+  font-size: 40px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 15px rgb(121, 16, 16);
+  transition: all 0.4s ease-in-out;
+}
+.techs:hover {
+  transform: scale(1.02);
+  text-shadow: 0 0 20px rgb(255, 80, 80);
+}
+
+.cont1 {
+  position: relative;
+  top: 250px;
+  left: 10px;
+}
+.spec { 
+  color: white;
+  text-shadow: 0 0 15px rgb(241, 157, 157);
+  font-size: 15px;
+}
+
+.lay {
+  position:relative;
+  color: white;
+  top: 250px;
+  left: 10px;
+  font-size: 40px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 15px rgb(121, 16, 16);
+  transition: all 0.4s ease-in-out;
+}
+.lay:hover {
+  transform: scale(1.02);
+  text-shadow: 0 0 20px rgb(255, 80, 80);
+}
+
+.cont2 {
+  position: relative;
+  top: 250px;
+  left: 10px;
+}
+.sty {
+  color: white;
+  text-shadow: 0 0 15px rgb(241, 157, 157);
+  font-size: 15px;
+}
+
+.pro {
+  position:relative;
+  color: white;
+  top: 250px;
+  left: 10px;
+  font-size: 40px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 15px rgb(121, 16, 16);
+  transition: all 0.4s ease-in-out;
+}
+.pro:hover {
+  transform: scale(1.02);
+  text-shadow: 0 0 20px rgb(255, 80, 80);
+}
+
+.project1 {
+  position: relative;
+  width: 400px;
+  border-radius: 10px;
+  top: 250px;
+  left:25px ;
+  transition: transform 0.9s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+}
+.project1:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.cont3 {
+  position: relative;
+  width: 700px;
+  left: 450px;
+  top: 50px;
+  font-size: 20px;
+}
+.tit {
+  color: white;
+}
+
+/* Mobile */
+@media(max-width: 995px){
+  .logo {
+    font-size: 30px;
+    top: 20px;
+    left: 20px;
+    transition: font-size 0.5s ease-in-out;
+    text-shadow: 0 0px 12px rgb(160, 35, 35);
+  }
+  .logo:hover {
+    font-size: 35px;
+  }
+
+  .main, .skills, .work {
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid transparent;
+  }
+  .main:hover, .skills:hover, .work:hover {
+    font-size: 25px;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(207, 0, 0);
+    text-shadow: 0 0 10px rgb(207, 0, 0);
+  }
+  .main:active, .skills:active, .work:active {
+    transform: scale(0.98);
+    color: white;
+  }
+
+  .main { top: 100px; left: 10px; }
+  .skills { top: 100px; left: 150px; }
+  .work { top: 100px; left: 240px; }
+
+  .techs {
+    font-size: 20px;
+    top: 200px;
+    text-shadow: 0 0 15px white;
+  }
+  .cont1 {
+    top: 250px;
+    left: 10px;
+  }
+  .spec { 
+    font-size: 10px;
+  }
+
+  .lay {
+    font-size: 20px;
+    top: 250px;
+    text-shadow: 0 0 15px rgb(121, 16, 16);
+  }
+
+  .cont2 {
+    top: 250px;
+    left: 10px;
+  }
+  .sty {
+    font-size: 10px;
+  }
+
+  .pro {
+    font-size: 20px;
+    top: 250px;
+    text-shadow: 0 0 15px rgb(121, 16, 16);
+  }
+
+  .project1 {
+    width: 200px;
+    top: 250px;
+    left:25px ;
+    transition: transform 0.9s ease-in-out;
+  }
+  .project1:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .cont3 {
+    width: 300px;
+    left: 25px;
+    top: 250px;
+    font-size: 10px;
+  }
+  .tit {
+    color: white;
+  }
+}
