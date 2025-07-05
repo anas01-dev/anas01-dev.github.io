@@ -119,6 +119,17 @@ body {
 }
 
 @media(max-width: 995px) {
+  body {
+  background: linear-gradient(-45deg, #000000, #1a0000, #000000, #1a0000);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  font-family: "Boldonse", system-ui;
+  max-width: 600px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
   .logo {
     font-size: 30px;
     top: 20px;
